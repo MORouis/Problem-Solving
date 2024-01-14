@@ -9,3 +9,9 @@ def is_minus(c):
 
 def is_alpha(c):
     return is_minus(c) or is_majus(c)
+
+def char_to_order(char):
+    return ord(char)-ord('A')
+  
+def order_to_char(i):
+    return chr(i+ord('A'))
