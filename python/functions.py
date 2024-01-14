@@ -11,7 +11,10 @@ def is_alpha(c):
     return is_minus(c) or is_majus(c)
 
 def char_to_order(char):
-    return ord(char)-ord('A')
+    if is_majus(char):
+        return ord(char) - ord('A')
+    elif is_minus(char):
+        return ord(char) - ord('a')
   
 def order_to_char(i):
     return chr(i+ord('A'))
