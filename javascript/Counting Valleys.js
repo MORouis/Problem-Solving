@@ -14,3 +14,6 @@ function countingValleys(steps, path) {
   return valleys;
 }
 
+let steps = 14;
+let path = "UDDDUDUUUDDUDU";
+console.log(countingValleys(steps, path));
